@@ -1,0 +1,18 @@
+<!--
+ - Created by Brooks Johnson on 12/6/2021.
+ -->
+
+<!-- Custom Radio Buttons -->
+
+<template>
+    <div class="container" if:true={screen1}>
+        <div style="color: red" if:true={invalid}>Pick a radio button</div>
+        <input type="radio" name="radio1" value={radio1} data-key="1" onclick={handleRadioClick}>Pick Me </br>
+        <input type="radio" name="radio1" value={radio2} data-key="2" onclick={handleRadioClick}>Pick Me </br>
+        <input type="radio" name="radio1" value={radio3} data-key="3" onclick={handleRadioClick}>Pick Me </br>
+        <button onclick={handleClick}>Click Me</button>
+    </div>
+    <template if:true={screen2}>
+        <h1>I am the new screen</h1>
+    </template>
+</template>
