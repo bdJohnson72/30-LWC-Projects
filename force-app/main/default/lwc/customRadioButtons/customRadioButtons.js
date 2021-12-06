@@ -18,7 +18,6 @@ export default class CustomRadioButtons extends LightningElement {
         const radioArray = Array.from(this.template.querySelectorAll('input'));
         let valid = radioArray.filter((input) => input.checked);
         if (valid.length === 0){
-            console.log('adding invalid classList')
             radioArray[0].classList.add('invalid');
             this.invalid = true;
         }else {
