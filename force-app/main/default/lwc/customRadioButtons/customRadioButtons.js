@@ -27,7 +27,6 @@ export default class CustomRadioButtons extends LightningElement {
     }
 
     handleRadioClick(event){
-        console.log(event.target)
         const radioArray = Array.from(this.template.querySelectorAll('input'));
         radioArray.forEach(radio => radio.classList.remove('invalid'))
         this.invalid = false;
